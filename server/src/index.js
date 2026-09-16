@@ -37,7 +37,7 @@ app.get('/health', (req, res) => {
   res.json({ 
     status: 'ok', 
     timestamp: new Date().toISOString(), 
-    service: 'DuoSpace Zero-Knowledge Relay',
+    service: 'Syncora Zero-Knowledge Relay',
     activeConnections: io.engine.clientsCount
   });
 });
@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuoSpace — Relay & Backend Engine</title>
+  <title>Syncora — Relay & Backend Engine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -214,11 +214,11 @@ app.get('/', (req, res) => {
       <div class="dot"></div>
       <span>RELAY ENGINE ONLINE (PORT 5001)</span>
     </div>
-    <h1>DuoSpace Backend</h1>
+    <h1>Syncora Backend</h1>
     <p>Zero-Knowledge Ephemeral Relay, WebRTC Signaling Hub, and Isolated Code Runner are operational.</p>
     
     <a href="http://localhost:5173" class="btn-launch">
-      <span>🚀 Open DuoSpace Web App (Port 5173)</span>
+      <span>⚡ Open Syncora Web App (Port 5173)</span>
       <span>→</span>
     </a>
 
@@ -272,9 +272,9 @@ server.on('error', (err) => {
 
 server.listen(PORT, () => {
   console.log(`========================================`);
-  console.log(`⚡ Syncora Relay Server Running on Port ${PORT}`);
-  console.log(`📡 WebSocket & WebRTC Signaling Ready`);
-  console.log(`🔒 Zero-Knowledge Ephemeral Relay Active`);
+  console.log(`Syncora Relay Server Running on Port ${PORT}`);
+  console.log(`WebSocket & WebRTC Signaling Ready`);
+  console.log(`Ephemeral Relay Active`);
   console.log(`========================================`);
 });
 
