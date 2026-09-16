@@ -8,7 +8,7 @@
 |                                                                                 |
 |  +----------------+  +-------------------+  +--------------------------------+  |
 |  | SpaceRail      |  | ChannelSidebar    |  | Main Dynamic Viewport          |  |
-|  | - Sanctuary DS |  | - Text Channels   |  | - ChatContainer                |  |
+|  | - Sanctuary SYN |  | - Text Channels   |  | - ChatContainer                |  |
 |  | - Room Pill    |  | - Voice Channels  |  | - VoiceStage                   |  |
 |  | - Telemetry    |  | - Activities      |  | - WatchTogether (Cinema)       |  |
 |  | - Burn Trigger |  | - Voice Connected |  | - CodeSandbox (IDE)            |  |

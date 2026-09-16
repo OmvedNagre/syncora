@@ -260,10 +260,21 @@ setupSocketHandlers(io);
 
 const PORT = process.env.PORT || 5001;
 
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`\n❌ [SYNCORA SERVER ERROR] Port ${PORT} is already in use by another process.`);
+    console.error(`👉 Run: kill -9 $(lsof -ti :${PORT}) to free port ${PORT}, or set PORT in your .env\n`);
+  } else {
+    console.error('❌ Server error:', err);
+  }
+  process.exit(1);
+});
+
 server.listen(PORT, () => {
   console.log(`========================================`);
-  console.log(`🚀 DuoSpace Server Running on Port ${PORT}`);
+  console.log(`⚡ Syncora Relay Server Running on Port ${PORT}`);
   console.log(`📡 WebSocket & WebRTC Signaling Ready`);
   console.log(`🔒 Zero-Knowledge Ephemeral Relay Active`);
   console.log(`========================================`);
 });
+
