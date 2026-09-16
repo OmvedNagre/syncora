@@ -28,13 +28,17 @@ Instead of ad-hoc communication widgets, Syncora adopts the industry standard **
 ---
 
 ## Context Documentation Index
-1. [OVERVIEW.md](./OVERVIEW.md): Comprehensive project vision, key metrics, and terminology.
-2. [ARCHITECTURE.md](./ARCHITECTURE.md): Full technical architecture (Client, Server, Signaling, WebRTC Mesh, and Audio Engines).
-3. [DISCORD_COMMUNICATION_METHOD.md](./DISCORD_COMMUNICATION_METHOD.md): In-depth guide to the Discord communication UX and signaling mechanics.
-4. [COMPONENT_MAP.md](./COMPONENT_MAP.md): Detailed component breakdown across the codebase.
-5. [PERSPECTIVE_AND_DESIGN_DECISIONS.md](./PERSPECTIVE_AND_DESIGN_DECISIONS.md): Architectural decisions, rationale, design tokens, and aesthetic choices.
-6. [CHANGELOG_AND_HISTORY.md](./CHANGELOG_AND_HISTORY.md): Chronological history of milestones from project inception to current state.
 
+| Document | Description |
+| :--- | :--- |
+| **[OVERVIEW.md](./OVERVIEW.md)** | Comprehensive project vision, core capabilities, target personas, and value proposition. |
+| **[PERSPECTIVE_AND_DESIGN_DECISIONS.md](./PERSPECTIVE_AND_DESIGN_DECISIONS.md)** | Rationale behind dedicated viewports, Discord color tokens, procedural Web Audio synthesizer, and zero-persistence privacy. |
+| **[DISCORD_COMMUNICATION_METHOD.md](./DISCORD_COMMUNICATION_METHOD.md)** | Deep dive into the Discord voice lifecycle, connection popover, video stage, screen sharing, and inline replies. |
+| **[ARCHITECTURE.md](./ARCHITECTURE.md)** | Full technical architecture: system topologies, client state contexts, WebRTC mesh, and RAM-only server registry. |
+| **[STATE_AND_SIGNALING_LIFECYCLE.md](./STATE_AND_SIGNALING_LIFECYCLE.md)** | Exhaustive Socket.IO event schema, WebRTC peer connection choreography, audio analyser loop, and cleanup procedures. |
+| **[USER_FLOWS_AND_SCENARIOS.md](./USER_FLOWS_AND_SCENARIOS.md)** | Step-by-step walkthroughs of instant space creation, voice calling, threaded replies, sandbox coding, cinema, and the 10-second Burn protocol. |
+| **[COMPONENT_MAP.md](./COMPONENT_MAP.md)** | Granular inventory of all frontend layout, call, chat, activity, and utility files alongside server routes. |
+| **[CHANGELOG_AND_HISTORY.md](./CHANGELOG_AND_HISTORY.md)** | Chronological history of milestones from the initial DuoSpace v1 prototype to the Syncora v2 rebranding. |
 
 ---
 *Created dynamically for Syncora Sanctuary — Ephemeral Real-Time Collaboration.*
